@@ -20,8 +20,8 @@
     }
 
     body {
-      background: #fff;
-      color: #111;
+      background: #1c1c1c; /* GANTI: #1c1c1c = hitam, #2f2f2f = abu gelap, #3a3a2e = olive dark */
+      color: #f9f9f9;
       line-height: 1.6;
     }
 
@@ -41,14 +41,14 @@
     }
 
     nav a {
-      color: #111;
+      color: #f9f9f9;
       text-decoration: none;
       margin: 0 15px;
       font-weight: 500;
     }
 
     nav a:hover {
-      color: #888;
+      color: #ccc;
     }
 
     .hero {
@@ -64,7 +64,7 @@
 
     .hero p {
       font-size: 1rem;
-      color: #555;
+      color: #ddd;
       max-width: 600px;
       margin: 0 auto;
     }
@@ -74,8 +74,8 @@
     }
 
     .cta a {
-      background: #111;
-      color: #fff;
+      background: #f9f9f9;
+      color: #000;
       padding: 12px 24px;
       text-decoration: none;
       font-weight: 600;
@@ -92,6 +92,9 @@
     .product {
       text-align: center;
       max-width: 600px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
     }
 
     .product img {
@@ -104,6 +107,7 @@
       font-size: 1.3rem;
       font-weight: 600;
       margin-bottom: 5px;
+      color: #000;
     }
 
     .product p {
@@ -112,7 +116,7 @@
     }
 
     footer {
-      background: #111;
+      background: #000;
       color: #fff;
       padding: 40px 20px;
       text-align: center;
@@ -132,4 +136,36 @@
 
 <body>
   <header>
-    <h1>HYPETH CLUB</h1
+    <h1>HYPETH CLUB</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Discover the latest arrivals from Hypeth Club.</h2>
+    <p>The SS24/25 collection opens with our White Tee — The inner club, crafted in Earth Java. More circle pieces dropping soon. Order now, stay ahead.</p>
+    <div class="cta">
+      <a href="#products">Lihat Koleksi</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="product">
+      <img src="product-front.png" alt="Hypeth Club White Tee Front">
+      <img src="product-back.png" alt="Hypeth Club White Tee Back">
+      <h3>HYPETH CLUB® The Inner Club - White</h3>
+      <p>IDR 120.000</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Order via WhatsApp: <a href="https://wa.me/6289644363177">0896-4436-3177</a></p>
+    <p>Follow us: @hypeth.club</p>
+    <p>&copy; 2025 Hypeth Club. All rights reserved.</p>
+  </footer>
+</body>
+</html>
